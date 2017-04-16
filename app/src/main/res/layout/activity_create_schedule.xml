@@ -36,7 +36,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="25dp"
         android:text="2 - 3 P.M."
-        android:layout_below="@+id/activitySwim"
+        android:layout_below="@+id/activity1"
         android:layout_alignLeft="@+id/time1_2"
         android:layout_alignStart="@+id/time1_2" />
 
@@ -46,7 +46,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
         android:text="3 - 4 P.M."
-        android:layout_below="@+id/activityFree1"
+        android:layout_below="@+id/activity2"
         android:layout_alignLeft="@+id/time2_3"
         android:layout_alignStart="@+id/time2_3" />
 
@@ -68,59 +68,59 @@
         android:layout_height="wrap_content"
         android:text="5 - 6 P.M."
         android:layout_marginTop="26dp"
-        android:layout_below="@+id/activityFree2"
+        android:layout_below="@+id/activity4"
         android:layout_alignLeft="@+id/time4_5"
         android:layout_alignStart="@+id/time4_5" />
 
     <EditText
-        android:id="@+id/activitySwim"
+        android:id="@+id/activity1"
         android:layout_width="wrap_content"
         android:layout_height="40dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Swimming"
-        android:layout_marginRight="22dp"
-        android:layout_marginEnd="22dp"
         android:layout_alignBaseline="@+id/time1_2"
         android:layout_alignBottom="@+id/time1_2"
+        android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
+        android:layout_marginEnd="22dp"
+        android:layout_marginRight="22dp"
+        android:ems="10"
+        android:hint="Enter Activity"
+        android:inputType="textPersonName" />
 
     <EditText
-        android:id="@+id/activityFree1"
+        android:id="@+id/activity2"
         android:layout_width="wrap_content"
         android:layout_height="40dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Free"
         android:layout_alignBaseline="@+id/time2_3"
         android:layout_alignBottom="@+id/time2_3"
-        android:layout_alignLeft="@+id/activitySwim"
-        android:layout_alignStart="@+id/activitySwim" />
+        android:layout_alignLeft="@+id/activity1"
+        android:layout_alignStart="@+id/activity1"
+        android:ems="10"
+        android:hint="Enter Activity"
+        android:inputType="textPersonName" />
 
     <EditText
-        android:id="@+id/activityHW"
+        android:id="@+id/activity3"
         android:layout_width="wrap_content"
         android:layout_height="40dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Homework"
         android:layout_alignBaseline="@+id/time3_4"
         android:layout_alignBottom="@+id/time3_4"
-        android:layout_alignLeft="@+id/activityFree1"
-        android:layout_alignStart="@+id/activityFree1" />
+        android:layout_alignLeft="@+id/activity2"
+        android:layout_alignStart="@+id/activity2"
+        android:ems="10"
+        android:hint="Enter Activity"
+        android:inputType="textPersonName" />
 
     <EditText
-        android:id="@+id/activityFree2"
+        android:id="@+id/activity4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Free"
         android:layout_alignBaseline="@+id/time4_5"
         android:layout_alignBottom="@+id/time4_5"
-        android:layout_alignLeft="@+id/activityHW"
-        android:layout_alignStart="@+id/activityHW" />
+        android:layout_alignLeft="@+id/activity3"
+        android:layout_alignStart="@+id/activity3"
+        android:ems="10"
+        android:hint="Enter Activity"
+        android:inputType="textPersonName" />
 
     <TextView
         android:id="@+id/activity"
@@ -131,20 +131,20 @@
         android:textSize="34sp"
         android:layout_alignBaseline="@+id/time"
         android:layout_alignBottom="@+id/time"
-        android:layout_alignLeft="@+id/activitySwim"
-        android:layout_alignStart="@+id/activitySwim"
+        android:layout_alignLeft="@+id/activity1"
+        android:layout_alignStart="@+id/activity1"
         android:layout_marginLeft="23dp"
         android:layout_marginStart="23dp" />
 
     <EditText
-        android:id="@+id/activityDraw"
+        android:id="@+id/activity5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignEnd="@+id/activityFree2"
-        android:layout_alignRight="@+id/activityFree2"
-        android:layout_below="@+id/activityFree2"
+        android:layout_alignEnd="@+id/activity4"
+        android:layout_alignRight="@+id/activity4"
+        android:layout_below="@+id/activity4"
         android:layout_marginTop="11dp"
         android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Drawing" />
+        android:hint="Enter Activity"
+        android:inputType="textPersonName" />
 </android.widget.RelativeLayout>
