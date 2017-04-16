@@ -147,4 +147,16 @@
         android:ems="10"
         android:hint="Enter Activity"
         android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/saveSchedule"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="54dp"
+        android:text="Save"
+        android:layout_below="@+id/activity5"
+        android:layout_alignRight="@+id/activity"
+        android:layout_alignEnd="@+id/activity"
+        android:layout_marginRight="21dp"
+        android:layout_marginEnd="21dp" />
 </android.widget.RelativeLayout>
