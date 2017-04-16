@@ -33,7 +33,7 @@ public class MainActivity extends AppCompatActivity {
     User user;
     //private FirebaseAuth mAuth;
     //private FirebaseAuth.AuthStateListener mAuthListener;
-
+    //Hello!
 
     public FirebaseDatabase database = FirebaseDatabase.getInstance();
     public DatabaseReference myRef = database.getReference("Users");
