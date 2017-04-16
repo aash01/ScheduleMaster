@@ -10,51 +10,45 @@
         android:id="@+id/time"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
         android:layout_marginLeft="27dp"
         android:layout_marginStart="27dp"
         android:layout_marginTop="29dp"
         android:text="Time"
-        android:textAppearance="@android:style/TextAppearance.Material.Display1"
         android:textColor="@android:color/black"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:textSize="34sp" />
 
     <TextView
         android:id="@+id/time1_2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignEnd="@+id/time"
-        android:layout_alignLeft="@+id/time"
-        android:layout_alignRight="@+id/time"
-        android:layout_alignStart="@+id/time"
+        android:layout_marginTop="25dp"
+        android:text="1 - 2 P.M."
         android:layout_below="@+id/time"
-        android:layout_marginTop="34dp"
-        android:text="1 - 2 P.M." />
+        android:layout_alignLeft="@+id/time"
+        android:layout_alignStart="@+id/time" />
 
     <TextView
         android:id="@+id/time2_3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignEnd="@+id/time1_2"
+        android:layout_marginTop="25dp"
+        android:text="2 - 3 P.M."
+        android:layout_below="@+id/activitySwim"
         android:layout_alignLeft="@+id/time1_2"
-        android:layout_alignRight="@+id/time1_2"
-        android:layout_alignStart="@+id/time1_2"
-        android:layout_below="@+id/time1_2"
-        android:layout_marginTop="24dp"
-        android:text="2 - 3 P.M." />
+        android:layout_alignStart="@+id/time1_2" />
 
     <TextView
         android:id="@+id/time3_4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="18dp"
+        android:layout_marginTop="24dp"
         android:text="3 - 4 P.M."
-        android:layout_below="@+id/time2_3"
+        android:layout_below="@+id/activityFree1"
         android:layout_alignLeft="@+id/time2_3"
-        android:layout_alignStart="@+id/time2_3"
-        android:layout_alignRight="@+id/time2_3"
-        android:layout_alignEnd="@+id/time2_3" />
+        android:layout_alignStart="@+id/time2_3" />
 
     <TextView
         android:id="@+id/time4_5"
@@ -73,22 +67,84 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="5 - 6 P.M."
-        android:layout_below="@+id/time4_5"
+        android:layout_marginTop="26dp"
+        android:layout_below="@+id/activityFree2"
         android:layout_alignLeft="@+id/time4_5"
-        android:layout_alignStart="@+id/time4_5"
-        android:layout_marginTop="24dp"
-        android:layout_alignRight="@+id/time4_5"
-        android:layout_alignEnd="@+id/time4_5" />
+        android:layout_alignStart="@+id/time4_5" />
 
     <EditText
+        android:id="@+id/activitySwim"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Swimming"
+        android:layout_marginRight="22dp"
+        android:layout_marginEnd="22dp"
+        android:layout_alignBaseline="@+id/time1_2"
+        android:layout_alignBottom="@+id/time1_2"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <EditText
+        android:id="@+id/activityFree1"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Free"
+        android:layout_alignBaseline="@+id/time2_3"
+        android:layout_alignBottom="@+id/time2_3"
+        android:layout_alignLeft="@+id/activitySwim"
+        android:layout_alignStart="@+id/activitySwim" />
+
+    <EditText
+        android:id="@+id/activityHW"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Homework"
+        android:layout_alignBaseline="@+id/time3_4"
+        android:layout_alignBottom="@+id/time3_4"
+        android:layout_alignLeft="@+id/activityFree1"
+        android:layout_alignStart="@+id/activityFree1" />
+
+    <EditText
+        android:id="@+id/activityFree2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Free"
+        android:layout_alignBaseline="@+id/time4_5"
+        android:layout_alignBottom="@+id/time4_5"
+        android:layout_alignLeft="@+id/activityHW"
+        android:layout_alignStart="@+id/activityHW" />
+
+    <TextView
         android:id="@+id/activity"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/time1_2"
-        android:layout_marginLeft="32dp"
-        android:layout_marginStart="32dp"
-        android:layout_toRightOf="@+id/time"
+        android:text="Activity"
+        android:textColor="@android:color/black"
+        android:textSize="34sp"
+        android:layout_alignBaseline="@+id/time"
+        android:layout_alignBottom="@+id/time"
+        android:layout_alignLeft="@+id/activitySwim"
+        android:layout_alignStart="@+id/activitySwim"
+        android:layout_marginLeft="23dp"
+        android:layout_marginStart="23dp" />
+
+    <EditText
+        android:id="@+id/activityDraw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/activityFree2"
+        android:layout_alignRight="@+id/activityFree2"
+        android:layout_below="@+id/activityFree2"
+        android:layout_marginTop="11dp"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="Activity" />
+        android:text="Drawing" />
 </android.widget.RelativeLayout>
