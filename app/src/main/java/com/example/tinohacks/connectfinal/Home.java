@@ -1,5 +1,6 @@
 package com.example.tinohacks.connectfinal;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.SearchView;
@@ -29,6 +30,7 @@ public class Home extends AppCompatActivity {
     public String searchName;
     private SearchView searchView;
 
+
     public FirebaseDatabase database = FirebaseDatabase.getInstance();
     public DatabaseReference myRef = database.getReference("Users");
 
@@ -52,7 +54,8 @@ public class Home extends AppCompatActivity {
         create.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                Intent i = new Intent(getApplicationContext(),CreateSchedule.class);
+                startActivity(i);
             }
         });
 
