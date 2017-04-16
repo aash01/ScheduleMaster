@@ -35,6 +35,8 @@ public class MainActivity extends AppCompatActivity {
     //private FirebaseAuth.AuthStateListener mAuthListener;
     //Hello Anjan!
 
+    //Hi again!
+
     public FirebaseDatabase database = FirebaseDatabase.getInstance();
     public DatabaseReference myRef = database.getReference("Users");
 

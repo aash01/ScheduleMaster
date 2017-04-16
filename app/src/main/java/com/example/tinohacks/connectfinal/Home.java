@@ -2,6 +2,7 @@ package com.example.tinohacks.connectfinal;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.widget.SearchView;
 import android.view.View;
 import android.widget.Button;
 
@@ -15,7 +16,8 @@ public class Home extends AppCompatActivity {
     private String interest;
     private Button update;
     private Button create;
-
+    public String searchName;
+    private SearchView searchView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,7 +27,7 @@ public class Home extends AppCompatActivity {
 
         update = (Button) findViewById(R.id.update);
         create = (Button) findViewById(R.id.create);
-
+        searchView = (SearchView) findViewById(R.id.searchView);
         update.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -39,6 +41,9 @@ public class Home extends AppCompatActivity {
 
             }
         });
+
+
+
 
 
 
