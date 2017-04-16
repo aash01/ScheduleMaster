@@ -7,21 +7,32 @@
     tools:context="com.example.tinohacks.connectfinal.Home">
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/create"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="21dp"
+        android:text="Create Schedule"
+        android:layout_below="@+id/searchView"
+        android:layout_alignRight="@+id/update"
+        android:layout_alignEnd="@+id/update" />
+
+    <Button
+        android:id="@+id/update"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Update Schedule"
         tools:layout_editor_absoluteX="117dp"
         tools:layout_editor_absoluteY="76dp"
-        android:layout_marginTop="65dp"
-        android:layout_below="@+id/searchView"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/create"
         android:layout_centerHorizontal="true" />
 
     <SearchView
         android:id="@+id/searchView"
         android:layout_width="350dp"
         android:layout_height="50dp"
+        android:layout_marginTop="19dp"
         android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        app:defaultQueryHint="hint" />
+        android:layout_centerHorizontal="true" />
+
 </android.widget.RelativeLayout>
