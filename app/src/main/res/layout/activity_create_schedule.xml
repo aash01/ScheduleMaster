@@ -22,12 +22,12 @@
 
     <EditText
         android:id="@+id/time1"
-        android:layout_width="wrap_content"
+        android:layout_width="100dp"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/editText2"
-        android:layout_alignStart="@+id/editText2"
-        android:layout_below="@+id/editText2"
-        android:layout_marginTop="46dp"
+        android:layout_marginTop="12dp"
         android:ems="10"
-        android:inputType="time" />
+        android:inputType="time"
+        android:layout_below="@+id/timeMenu"
+        android:layout_alignLeft="@+id/timeMenu"
+        android:layout_alignStart="@+id/timeMenu" />
 </android.widget.RelativeLayout>
